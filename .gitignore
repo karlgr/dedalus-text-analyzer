@@ -1,0 +1,12 @@
+node_modules/
+.angular/
+dist/
+build/
+
+.env
+
+.vscode/
+.idea/
+
+.DS_Store
+

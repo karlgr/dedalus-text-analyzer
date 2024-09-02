@@ -1,0 +1,42 @@
+<div class="text-analyzer">
+  <h1>Text Analyzer</h1>
+
+  <div class="input-group">
+    <label for="textInput">Text:</label>
+    <input id="textInput" [(ngModel)]="text" placeholder="Enter text here">
+  </div>
+
+  <div class="input-group">
+    <label>Analysis Type:</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="analysisType" [(ngModel)]="analysisType" value="vowels"> Vowels
+      </label>
+      <label>
+        <input type="radio" name="analysisType" [(ngModel)]="analysisType" value="consonants"> Consonants
+      </label>
+    </div>
+  </div>
+  
+  <div class="input-group">
+    <label>Mode:</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="mode" [(ngModel)]="mode" value="offline"> Offline
+      </label>
+      <label>
+        <input type="radio" name="mode" [(ngModel)]="mode" value="online"> Online
+      </label>
+    </div>
+  </div>
+
+  <button class="analyze-button" (click)="analyzeText()">Analyze</button>
+
+  <div *ngIf="analysisHistory.length > 0">
+    <h3>Analyses:</h3>
+  
+      <div *ngFor="let analysis of analysisHistory.reverse()">
+        <p class="result-text">{{ analysis }}</p>
+      </div>
+  </div>
+</div>

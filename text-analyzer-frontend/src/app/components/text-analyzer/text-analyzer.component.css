@@ -1,0 +1,79 @@
+.text-analyzer {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-analyzer > *:not(.analyze-button) {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+}
+
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.text-input-label {
+  margin-bottom: 10px;
+}
+
+.text-analyzer input#textInput  {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.analyze-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #13034d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.analyze-button:hover {
+  background-color: #2f14e2;
+}
+
+.result {
+  margin-top: 30px;
+}
+
+.result h3 {
+  color: #333;
+  font-size: 20px;
+}
+
+.result-text {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  white-space: pre-wrap;
+  font-size: 14px;
+  color: #333;
+}
